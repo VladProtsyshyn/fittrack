@@ -27,13 +27,12 @@ const isProd = argv.mode === "production";
         module: {
             rules: [
             {
-                test: /\.(sa|sc|c)ss$/,
+                test: /\.css$/i,
                 use: [
-                isProd ? MiniCssExtractPlugin.loader : "style-loader",
-                "css-loader",
-                "postcss-loader",
-                "sass-loader"
-                ]
+                    isProd ? MiniCssExtractPlugin.loader : "style-loader",
+                    "css-loader",
+                    "postcss-loader",
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/i,

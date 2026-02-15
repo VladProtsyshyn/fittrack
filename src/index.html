@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>FitTrack</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FitTrack</title>
+    </head>
     <body>
-        <h1>🔥 FitTrack запущений</h1>
-        <p>Webpack + json-server працюють</p>
+        <div class="container">
+            <h1>🔥 FitTrack</h1>
+            <p>Мій персональний трекер тренувань</p>
+            <form class="plan-form" autocomplete="off">
+                <h2>Додати план</h2>
+
+                <label>
+                    День
+                    <select name="day" required>
+                    <option value="Mon">Mon</option>
+                    <option value="Tue">Tue</option>
+                    <option value="Wed">Wed</option>
+                    <option value="Thu">Thu</option>
+                    <option value="Fri">Fri</option>
+                    <option value="Sat">Sat</option>
+                    <option value="Sun">Sun</option>
+                    </select>
+                </label>
+
+                <label>
+                    Назва
+                    <input name="title" type="text" placeholder="Upper Body" required />
+                </label>
+
+                <label>
+                    Тип
+                    <input name="type" type="text" placeholder="Strength" required />
+                </label>
+
+                <label>
+                    Нотатки
+                    <input name="notes" type="text" placeholder="Bench + Rows + Shoulders" />
+                </label>
+
+                <label>
+                    Тривалість (хв)
+                    <input name="durationMin" type="number" min="1" value="45" required />
+                </label>
+
+                <button type="submit">Додати</button>
+            </form>
+            <div class="plans-list"></div>
+        </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
