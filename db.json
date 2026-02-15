@@ -1,0 +1,13 @@
+{
+    "plans": [
+        {
+        "id": 1,
+        "day": "Mon",
+        "title": "Upper Body",
+        "type": "Strength",
+        "notes": "Bench + Rows + Shoulders",
+        "durationMin": 60,
+        "updatedAt": "2026-02-12T10:00:00.000Z"
+        }
+    ]
+}
