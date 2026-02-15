@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+    body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #0b0f17;
+    color: #e7eefc;
+}
+
+    h1 {
+    margin: 24px;
+    font-size: 32px;
+}
